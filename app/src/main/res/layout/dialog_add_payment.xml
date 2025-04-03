@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/amount"
+        android:layout_gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/background_rounded_repechage"
+        android:inputType="numberDecimal" />
+
+    <Spinner
+        android:id="@+id/spinnerPaymentType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/etProvider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_rounded_repechage"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:padding="@dimen/_5sdp"
+        android:hint="@string/provider_icici_citibank_etc"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/etTransactionReference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_rounded_repechage"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:padding="@dimen/_5sdp"
+        android:hint="@string/transaction_reference"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/azure"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+</LinearLayout>

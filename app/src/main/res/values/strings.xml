@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="provider_icici_citibank_etc">Provider (ICICI, Citibank, etc.)</string>
+    <string name="transaction_reference">Transaction Reference</string>
+    <string name="amount">₹ Amount</string>
+    <string name="cancel">CANCEL</string>
+    <string name="ok">OK</string>
+    <string name="save">Save</string>
+    <string name="add_payment">Add Payment</string>
+    <string name="total_amount_0">Total Amount = ₹ 0</string>
+    <string name="payment_type_amount">Payment Type - ₹Amount</string>
+    <string name="provider_xyz_bank">Provider: XYZ Bank</string>
+</resources>

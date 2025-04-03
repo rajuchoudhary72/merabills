@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_amount_0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/tvHeadingPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payments"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/tvTotalAmount"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_below="@id/tvHeadingPayment"
+        android:layout_above="@id/buttonll"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_no_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingTop="@dimen/_15sdp"
+        android:text="No Payments Data Found"
+        android:textColor="#E51A32"
+        android:textSize="@dimen/_17sdp" />
+<LinearLayout
+    android:id="@+id/buttonll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:layout_margin="@dimen/_5sdp"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/btnAddPayment"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:textColor="@color/azure"
+        android:layout_height="wrap_content"
+        android:text="@string/add_payment"
+        />
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="@string/save"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+       />
+</LinearLayout>
+
+
+</RelativeLayout>
